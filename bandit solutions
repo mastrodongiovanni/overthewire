@@ -1,0 +1,50 @@
+password bandit2: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+password bandit2: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+password bandit3: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+password bandit4: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+password bandit5: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+password bandit6: 
+	bandit5@bandit:~/inhere$ find . -readable -size 1033c
+	./maybehere07/.file2
+	HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+password bandit7:
+	bandit6@bandit:~$ find / -size 33c -user bandit7 -type f
+	bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
+	morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+password bandit8:
+	bandit7@bandit:~$ cat data.txt | grep millionth
+	millionth       dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+	
+password bandit9:
+	sort data.txt | uniq -u
+	4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+password bandit10:
+	cat data.txt | grep -a -e "=======" -
+	_Z
+	  СHvޝn<kXBty/
+		      X?mx,=Enqe
+				&/g>========== the
+	q      r3>!A];Lu<Q /oa.*OYﾂ!ZWy4$ ========== password
+	##AMM/Dq]L":wySt+Ea|RE>wn;
+				  ?@F,f\Z'========== is
+	ǭ?*9f3ߚqw}ɺTc#y-ey =1а{}#Ax}K
+	( D! O?eR=[G6DVw ========== FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+password bandit11:
+	base64 -d data.txt 
+	The password is dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+password bandit12:
+	cat data.txt | tr abcdefghijklmnopqrstuvwxyz nopqrstuvwxyzabcdefghijklm | tr ABCDEFGHIJKLMNOPQRSTUVWXYZ NOPQRSTUVWXYZABCDEFGHIJKLM
+	The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+password bandit13:
+
+password bandit14:
+
+password bandit15:
+
+password bandit16:
