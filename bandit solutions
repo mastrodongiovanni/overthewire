@@ -65,11 +65,59 @@ password bandit16:
 	kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
 
 password bandit17:
-netcat 31-32000
-check ssl
-find the one that responds with the password:
+	nmap localhost -p 31000-32000
+
+	#!/bin/sh
+	for port in 31046 31518 31691 31790 31960;
+	do
+	openssl s_client -nocommands -connect localhost:$port; echo tested $port
+	done
+
+	Correct!
+	-----BEGIN RSA PRIVATE KEY-----
+	MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
+	...etc
+
+	EReVavePLFHtFlFsjn3hyzMlvSuSAcRD
 
 password bandit18:
+	diff passwords.old passwords.new
+	42c42
+	< pGozC8kOHLkBMOaL0ICPvLV1IjQ5F1VA
+	---
+	> x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+
 password bandit19:
+	ssh bandit18@bandit cat readme
+	cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+
 password bandit20:
+	./bandit20-do cat /etc/bandit_pass/bandit20
+	0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
 password bandit21:
+	opened a connection...
+		nc -l -p 3131 -v
+		Listening on 0.0.0.0 3131
+		Connection received on localhost 49994
+	sent this ->	
+		0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+	recv this ->	
+		EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+
+password bandit22:
+	cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+	tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+
+password bandit23:
+	cat  /tmp/$mytarget
+	tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+
+password bandit24:
+
+password bandit25:
+password bandit26:
+
+
+
+
